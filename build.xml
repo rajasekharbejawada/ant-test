@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+   <project default="java">
+   <target name="class">
+	<javac includeantruntime="false" srcdir="." destdir="."></javac>
+   </target>
+   <target name="java" depends="class">
+	<java classname="helloworld"> 
+	<classpath path="."/>
+	</java>
+   </target>
+</project>
